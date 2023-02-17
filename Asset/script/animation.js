@@ -84,9 +84,8 @@ ScrollReveal().reveal(`.footer__read`, {
 });
 
 ScrollReveal().reveal(`.footer__content`, {
-   origin: "top",
-   distance: "500px",
-   duration: 1200,
+   scale: 1.5,
+   duration: 1500,
    opacity: 0,
    reset: true,
 });
