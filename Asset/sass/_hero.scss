@@ -1,0 +1,45 @@
+.hero {
+   display: grid;
+   gap: 4vw;
+
+   &__title {
+      text-align: center;
+
+      h1 {
+         background-image: linear-gradient(to right, $orange-color, $pink-color);
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         -webkit-background-clip: text;
+      }
+   }
+
+   &__service {
+      display: grid;
+      gap: .3rem;
+
+      &__container {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         text-align: center;
+         gap: 10vw;
+      }
+
+      &__logo {
+         margin-bottom: 10px;
+
+         img {
+            width: 5vw;
+         }
+      }
+
+      &__title {
+         color: white;
+         margin-bottom: 15px;
+      }
+
+      &__text {
+         color: $text-color;
+         padding: 0 2rem;
+      }
+   }
+}

@@ -1,0 +1,255 @@
+@media screen and (min-width: 280px) and (max-width:1024px) {
+   nav {
+      padding: 0 4vw;
+   }
+
+   .responsive__toggle {
+      display: block;
+
+      img {
+         height: 9vw;
+      }
+   }
+
+   .nav__links {
+      display: none;
+   }
+
+   h1 {
+      font-size: 5vh;
+      line-height: 5.6vh;
+   }
+
+   h2 {
+      font-size: 4vh;
+      line-height: 4.6vh;
+   }
+
+   h3 {
+      font-size: 3vh;
+      line-height: 3.6vh;
+   }
+
+   h4 {
+      font-size: 2.5vh;
+      line-height: 3.1vh;
+   }
+
+   h5 {
+      font-size: 2vh;
+      line-height: 2.6vh;
+   }
+
+   h6 {
+      font-size: 1.5vh;
+      line-height: 2.1vh;
+   }
+
+   p {
+      font-size: 2vh;
+      line-height: 2.6vh;
+   }
+
+   .section {
+      padding: 10vh 10vw;
+   }
+}
+
+@media screen and (max-width: 1023.98px) {
+   .hero {
+      gap: 5vh;
+
+      &__service {
+         &__logo {
+            img {
+               width: 12vw;
+            }
+         }
+
+         &__container {
+            grid-template-columns: 1fr 1fr;
+         }
+      }
+   }
+
+   .services {
+      gap: 6vh;
+
+      &__container {
+         grid-template-columns: 1fr 1fr;
+         gap: 5vh;
+      }
+
+      .service {
+         padding: 4vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+
+         &__logo {
+            img {
+               height: 6vh;
+            }
+         }
+      }
+   }
+
+   .milestones {
+      gap: 6vh;
+
+      &__container {
+         .milestone {
+            gap: 1vh;
+            padding: 3vh;
+
+            &__icon {
+               img {
+                  height: 5vh;
+               }
+            }
+         }
+      }
+   }
+
+   .clients {
+      &__container {
+         grid-template-columns: repeat(3, 1fr);
+         gap: 4rem;
+      }
+   }
+
+   .footer {
+      &__read {
+         flex-direction: column;
+         gap: 2rem;
+         padding-bottom: 5vh;
+
+         h2 {
+            font-size: 2.5vh;
+            text-align: center;
+            width: 80%;
+         }
+
+         button {
+            padding: 2vh;
+            font-size: 2vh;
+         }
+      }
+
+      &__content {
+         grid-template-columns: 1fr;
+         gap: 1vh;
+         margin-top: 2vh;
+      }
+
+      &__brand {
+         margin-bottom: 2vh;
+      }
+
+      &__logo {
+         gap: 5vw;
+
+         img {
+            height: 15vh;
+            border-radius: 15vh;
+         }
+      }
+
+      &__copyright {
+         text-align: center;
+      }
+
+      &__links {
+         h3 {
+            margin-bottom: 2vh;
+         }
+
+         ul {
+            li {
+               font-size: 2vh;
+               padding-bottom: 0.4vh;
+            }
+         }
+      }
+
+      &__social__links {
+         justify-content: space-between;
+         gap: 0;
+      }
+   }
+}
+
+@media screen and (max-width: 767.98px) {
+   .hero {
+      &__service {
+         &__container {
+            grid-template-columns: 1fr;
+         }
+      }
+   }
+
+   .about {
+      grid-template-columns: 1fr;
+      grid-gap: 8vw;
+
+      &__images {
+         position: relative;
+
+         img {
+            position: relative;
+            top: 0 !important;
+            bottom: 0 !important;
+            width: 60vw;
+            height: 50vh;
+
+            &:nth-of-type(2) {
+               display: none;
+            }
+         }
+      }
+
+      &__content {
+         &__container {
+            gap: 1vh;
+         }
+      }
+
+      &__link {
+         padding-bottom: 1vh;
+
+         span {
+            font-size: 2vh;
+         }
+      }
+   }
+
+   .services {
+      &__container {
+         grid-template-columns: 1fr;
+      }
+   }
+
+   .clients {
+      &__container {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 4rem;
+      }
+   }
+
+   .scrollToTop {
+
+      img {
+         height: 4vh;
+      }
+   }
+}
+
+@media screen and (max-width: 374.98px) {
+   .clients {
+      &__container {
+         grid-template-columns: 1fr;
+         gap: 4rem;
+      }
+   }
+}

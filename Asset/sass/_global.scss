@@ -1,0 +1,104 @@
+html {
+   overflow-x: hidden;
+   max-width: 100vw;
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: #101010;
+   font-family: 'Rubik', sans-serif;
+   text-transform: capitalize;
+
+   &::-webkit-scrollbar {
+      background-color: $primary-color;
+      width: 0.5rem;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(to right, $orange-color, $pink-color);
+      border-radius: .1rem;
+   }
+}
+
+button,
+input {
+   font-family: 'Rubik', sans-serif;
+   text-transform: capitalize;
+}
+
+h1 {
+   font-size: 6vw;
+   line-height: 6.5vw;
+}
+
+h2 {
+   font-size: 3vw;
+   line-height: 3.5vw;
+}
+
+h3 {
+   font-size: 1.7vw;
+   line-height: 2.2vw;
+}
+
+h4 {
+   font-size: 1.8vw;
+   line-height: 2.3vw;
+}
+
+h5 {
+   font-size: 1.3vw;
+   line-height: 1.8vw;
+}
+
+h6 {
+   font-size: 1vw;
+   line-height: 1.5vw;
+}
+
+p {
+   font-size: 1.2vw;
+   line-height: 1.7vw;
+}
+
+.dark {
+   background-color: $primary-color;
+}
+
+.semiDark {
+   color: #191919;
+}
+
+.section {
+   padding: 18vh 10vw;
+   max-width: 100vw !important;
+   overflow-x: hidden;
+
+   &__title {
+      h2 {
+         color: white;
+         font-weight: 500;
+         margin-bottom: 10px;
+      }
+
+      &__container {
+         text-align: center;
+      }
+   }
+
+   &__subTitle {
+      h5 {
+         background-image: linear-gradient(to right, $orange-color, $pink-color);
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         -webkit-background-clip: text;
+         margin-bottom: 5px;
+      }
+   }
+
+   &__info {
+      p {
+         color: $text-color;
+      }
+   }
+}

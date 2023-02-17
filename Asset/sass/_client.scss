@@ -1,0 +1,27 @@
+.clients {
+   display: grid;
+   grid-gap: 8vw;
+
+   &__container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 5vw;
+   }
+
+   .client {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+         height: 5vh;
+         transition: .3s ease-in-out;
+         cursor: pointer;
+
+         &:hover {
+            transform: scale(1.6);
+            overflow: hidden;
+         }
+      }
+   }
+}

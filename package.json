@@ -1,0 +1,25 @@
+{
+   "name": "zeniod-digital-agency",
+   "version": "1.0.0",
+   "description": "zeniod-digital-agency",
+   "main": "index.js",
+   "scripts": {
+      "watch:sass": "node-sass ./Asset/sass/app.scss ./Asset/css/app.css -w",
+      "devserver": "live-server --port=8000",
+      "start": "npm-run-all --parallel watch:sass devserver",
+      "comile:sass": "node-sass ./Asset/sass/app.scss ./Asset/css/app.comp.css",
+      "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ./Asset/css/app.comp.css -o ./Asset/css/app.prefix.css",
+      "compress:css": "node-sass ./Asset/css/app.prefix.css ./Asset/css/app.css --output-style compressed",
+      "build:css": "npm-run-all comile:sass prefix:css compress:css"
+   },
+   "author": "Cao Chi Quoc",
+   "license": "ISC",
+   "devDependencies": {
+      "autoprefixer": "^10.4.13",
+      "concat": "^1.0.3",
+      "node-sass": "^8.0.0",
+      "npm-run-all": "^4.1.5",
+      "postcss-cli": "^10.1.0",
+      "webpack-dev-server": "^4.11.1"
+   }
+}

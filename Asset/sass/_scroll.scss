@@ -1,0 +1,15 @@
+.scrollToTop {
+   display: none;
+   position: fixed;
+   bottom: 5vh;
+   right: 3vw;
+   z-index: 1;
+   background-color: black;
+   padding: 1rem;
+   border-radius: 3rem 3rem;
+   cursor: pointer;
+
+   img {
+      height: 6vh;
+   }
+}

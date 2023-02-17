@@ -1,0 +1,140 @@
+.nav {
+   background-color: $primary-color;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5vh 2vw 0 2vw;
+
+   &__brand {
+      display: flex;
+      align-items: center;
+      gap: 1vw;
+
+      h3 {
+         text-transform: uppercase;
+         letter-spacing: 0.3vw;
+         color: white;
+      }
+
+      img {
+         height: 10vw;
+      }
+   }
+
+   &__links {
+      color: white;
+
+      ul {
+         display: flex;
+         align-items: center;
+
+         li {
+            a {
+               color: white;
+               transition: .2s ease-in-out;
+               position: relative;
+
+               &::before {
+                  position: absolute;
+                  content: "";
+                  left: auto;
+                  right: 0;
+                  bottom: -7px;
+                  background: linear-gradient(to right, $orange-color, $pink-color);
+                  width: 0;
+                  height: 3px;
+                  transition: .2s ease-in-out;
+               }
+
+               &:hover::before {
+                  width: 100%;
+                  right: auto;
+                  left: 0;
+               }
+
+               &:hover {
+                  color: $orange-color;
+               }
+            }
+
+            margin: 0 2vw;
+            font-size: 2.5vh;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+.responsive {
+   &__toggle {
+      display: none;
+   }
+
+   &__navbar {
+      position: fixed;
+      top: 0;
+      right: -350px;
+      height: 100%;
+      width: 60%;
+      padding: 3.5vh 0;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: .4s ease-in-out;
+      z-index: 10;
+   }
+
+   &__nav {
+      &__brand {
+         display: flex;
+         align-items: center;
+         gap: 1vw;
+
+         h3 {
+            text-transform: uppercase;
+            letter-spacing: .3vw;
+            color: white;
+         }
+
+         img {
+            background-color: black;
+            height: 10vh;
+            padding: 2vh 1vw;
+            border-radius: 5vh;
+         }
+      }
+
+      &__links {
+         display: block;
+         color: white;
+         margin: 2vw;
+
+         ul {
+            li {
+               padding: 2.5vh;
+               margin: 2vh;
+
+               a {
+                  color: white;
+
+                  &:hover {
+                     color: $orange-color;
+                  }
+               }
+
+               font-size: 2.5vh;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+}
+
+.show {
+   opacity: 1 !important;
+   visibility: visible !important;
+   right: 0 !important;
+}

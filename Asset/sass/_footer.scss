@@ -1,0 +1,113 @@
+.footer {
+   background-color: #191919;
+
+   &__read {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 4vw;
+      border-bottom: 0.01rem solid $text-color;
+
+      h2 {
+         color: white;
+         font-size: 2.8rem;
+         line-height: 4.4vw;
+         width: 50%;
+      }
+
+      button {
+         padding: 4vh 4vw;
+         cursor: pointer;
+         outline: none;
+         border-radius: 3vw;
+         font-size: 1.4rem;
+         background-color: transparent;
+         border: $text-color 1px solid;
+         color: white;
+         transition: .3s ease-in-out;
+
+         &:hover {
+            background: linear-gradient(to right, $orange-color, $pink-color);
+            border-color: $orange-color;
+         }
+      }
+   }
+
+   &__content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      color: white;
+      padding-top: 4vw;
+      gap: 2vw;
+   }
+
+   &__brand {
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+   }
+
+   &__logo {
+      display: flex;
+      align-items: center;
+      gap: 1vw;
+
+      h3 {
+         text-transform: uppercase;
+         letter-spacing: .3vw;
+      }
+
+      img {
+         background-color: black;
+         height: 16vh;
+         padding: 4vh;
+         border-radius: 10vw;
+      }
+   }
+
+   &__copyright {
+      p {
+         color: $text-color;
+         letter-spacing: .1vw;
+         line-height: 4vh;
+      }
+   }
+
+   &__links {
+      h3 {
+         margin-bottom: 4vh;
+      }
+
+      ul {
+         display: inline-block;
+
+         li {
+            margin-bottom: 2vh;
+            cursor: pointer;
+            padding-bottom: 1vh;
+            color: $text-color;
+            background: linear-gradient(to right, $orange-color, $pink-color) left bottom / var(--d, 0%) 3px no-repeat;
+            transition: .2s ease-in-out;
+
+            &:hover {
+               --d: 100%;
+            }
+         }
+      }
+   }
+
+   &__social__links {
+      display: flex !important;
+      align-items: center;
+      gap: 2vw;
+      margin-top: 3vh;
+
+      img {
+         height: 4vh;
+
+         svg {
+            color: white;
+         }
+      }
+   }
+}
