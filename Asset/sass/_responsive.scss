@@ -72,11 +72,46 @@
       }
    }
 
+   .about {
+      grid-template-columns: 1fr;
+      grid-gap: 8vw;
+
+      &__images {
+         position: relative;
+
+         img {
+            position: relative;
+            top: 0 !important;
+            bottom: 0 !important;
+            width: 60vw;
+            height: 50vh;
+
+            &:nth-of-type(2) {
+               display: none;
+            }
+         }
+      }
+
+      &__content {
+         &__container {
+            gap: 1vh;
+         }
+      }
+
+      &__link {
+         padding-bottom: 1vh;
+
+         span {
+            font-size: 2vh;
+         }
+      }
+   }
+
    .services {
       gap: 6vh;
 
       &__container {
-         grid-template-columns: 1fr 1fr;
+         grid-template-columns: 1fr;
          gap: 5vh;
       }
 
@@ -186,47 +221,6 @@
          &__container {
             grid-template-columns: 1fr;
          }
-      }
-   }
-
-   .about {
-      grid-template-columns: 1fr;
-      grid-gap: 8vw;
-
-      &__images {
-         position: relative;
-
-         img {
-            position: relative;
-            top: 0 !important;
-            bottom: 0 !important;
-            width: 60vw;
-            height: 50vh;
-
-            &:nth-of-type(2) {
-               display: none;
-            }
-         }
-      }
-
-      &__content {
-         &__container {
-            gap: 1vh;
-         }
-      }
-
-      &__link {
-         padding-bottom: 1vh;
-
-         span {
-            font-size: 2vh;
-         }
-      }
-   }
-
-   .services {
-      &__container {
-         grid-template-columns: 1fr;
       }
    }
 

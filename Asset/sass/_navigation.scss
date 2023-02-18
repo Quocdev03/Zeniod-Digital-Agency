@@ -33,6 +33,7 @@
                color: white;
                transition: .2s ease-in-out;
                position: relative;
+               font-weight: 400;
 
                &::before {
                   position: absolute;
@@ -53,7 +54,10 @@
                }
 
                &:hover {
-                  color: $orange-color;
+                  background-image: linear-gradient(to right, $orange-color, $pink-color);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
                }
             }
 
@@ -68,6 +72,7 @@
 .responsive {
    &__toggle {
       display: none;
+      cursor: pointer;
    }
 
    &__navbar {
@@ -119,9 +124,15 @@
 
                a {
                   color: white;
+                  font-weight: 400;
+                  transition: all .3s;
 
                   &:hover {
-                     color: $orange-color;
+                     background-image: linear-gradient(to right, $orange-color, $pink-color);
+                     background-clip: text;
+                     -webkit-text-fill-color: transparent;
+                     -webkit-background-clip: text;
+
                   }
                }
 
